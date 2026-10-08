@@ -160,17 +160,21 @@
     margin-bottom: 90px;
   }
 
-  .product-block.reverse .product-image {
-    order: 1;
-  }
-
+  /* Na telefonie najpierw tekst, potem zdjęcie */
+  .product-block .product-content,
   .product-block.reverse .product-content {
-    order: 2;
+    order: 1;
     padding-left: 0;
   }
 
-  .product-image img {
+  .product-block .product-image,
+  .product-block.reverse .product-image {
+    order: 2;
     height: 480px;
+  }
+
+  .product-image img {
+    height: 100%;
   }
 
   .product-content {
@@ -187,8 +191,12 @@
     font-size: 42px;
   }
 
-  .product-image img {
+  .product-image {
     height: 380px;
+  }
+
+  .product-image img {
+    height: 100%;
   }
 
   .product-content h3 {
