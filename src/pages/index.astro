@@ -1,16 +1,30 @@
 ---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Products from '../components/Products.astro';
+import Realizations from '../components/Realizations.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Art of Steel — ekskluzywne wyroby metalowe."
+    />
+    <title>Art of Steel — Wyroby metalowe</title>
+  </head>
+
+  <body>
+    <Header />
+    <Hero />
+    <Products />
+    <Realizations />
+	<About />
+	<Contact />
+  </body>
 </html>
